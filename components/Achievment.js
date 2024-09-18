@@ -3,7 +3,10 @@ import React from 'react';
 
 const Achievement = () => {
   return (
-    <div id="achievements" className="bg-gray-100 px-10 py-6 rounded-lg shadow-md pt-12">
+    <div
+      id="achievements"
+      className="bg-gray-100 px-10 py-6 rounded-lg shadow-md pt-12"
+    >
       <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center pb-4">
         Our Achievements
       </h2>
@@ -11,23 +14,29 @@ const Achievement = () => {
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
             <Image
-              src="https://upload.wikimedia.org/wikipedia/en/2/24/National_Agricultural_Cooperative_Marketing_Federation_of_India_Logo.jpg"
+              src="/image/nafed.jpg"
               alt="Achievement 1"
               className="w-full h-40 object-contain mb-4"
+              width={200}
+              height={200}
             />
             <p className="text-gray-600 text-lg font-semibold italic text-center">
-              Empaneled with NAFED - Farmer's Corporation
+              Empaneled with NAFED - Farmer&#39;s Corporation
             </p>
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
             <Image
-              src="image/ministries.png"
+              src="/image/ministries.png"
               alt="Achievement 2"
               className="w-full h-40 object-cover mb-4"
+              width={200}
+              height={200}
             />
-            <p className="text-gray-600 text-lg font-semibold italic text-center">Empaneled with 19 Government Ministries</p>
+            <p className="text-gray-600 text-lg font-semibold italic text-center">
+              Empaneled with 19 Government Ministries
+            </p>
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
@@ -36,8 +45,12 @@ const Achievement = () => {
               src="/image/nsdc.png"
               alt="Achievement 3"
               className="w-full h-40 object-contain mb-4"
+              width={200}
+              height={200}
             />
-            <p className="text-gray-600 text-lg font-semibold italic text-center">Non-Funded Partnership with NSDC.</p>
+            <p className="text-gray-600 text-lg font-semibold italic text-center">
+              Non-Funded Partnership with NSDC.
+            </p>
           </div>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
@@ -46,8 +59,12 @@ const Achievement = () => {
               src="/image/titp.jpeg"
               alt="Achievement 4"
               className="w-full h-40 object-contain mb-4"
+              width={200}
+              height={200}
             />
-            <p className="text-gray-600 text-lg font-semibold italic text-center">International Collaboration - TITP</p>
+            <p className="text-gray-600 text-lg font-semibold italic text-center">
+              International Collaboration - TITP
+            </p>
           </div>
         </div>
       </div>
