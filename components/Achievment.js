@@ -10,7 +10,7 @@ const Achievement = () => {
       <div className="flex flex-wrap justify-center">
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <img
+            <Image
               src="https://upload.wikimedia.org/wikipedia/en/2/24/National_Agricultural_Cooperative_Marketing_Federation_of_India_Logo.jpg"
               alt="Achievement 1"
               className="w-full h-40 object-contain mb-4"
@@ -22,7 +22,7 @@ const Achievement = () => {
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <img
+            <Image
               src="image/ministries.png"
               alt="Achievement 2"
               className="w-full h-40 object-cover mb-4"
@@ -32,7 +32,7 @@ const Achievement = () => {
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <img
+            <Image
               src="/image/nsdc.png"
               alt="Achievement 3"
               className="w-full h-40 object-contain mb-4"
@@ -42,7 +42,7 @@ const Achievement = () => {
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <img
+            <Image
               src="/image/titp.jpeg"
               alt="Achievement 4"
               className="w-full h-40 object-contain mb-4"
