@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div id="home" className="flex flex-col md:flex-row items-center justify-center p-6 bg-gray-100 relative md:pl-24 md:pr-24">
+    <div
+      id="home"
+      className="flex flex-col md:flex-row items-center justify-center p-6 bg-gray-100 relative md:pl-24 md:pr-24"
+    >
       <div
         className="absolute inset-0 opacity-40 bg-cover bg-repeat"
         style={{
@@ -13,7 +16,7 @@ const HeroSection = () => {
       ></div>
       <div className="flex flex-col items-start md:w-3/4 relative z-10">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
-          Join India's No-1 Franchise Network
+          Join India&apos;s No-1 Franchise Network
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-6">
           Get a chance to join with us and boost your business.
