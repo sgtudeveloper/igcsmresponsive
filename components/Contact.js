@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     
-    <div id='form' className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center my-4" style={{ backgroundImage: "url('image/nsdc.png')"}}>
+    <div id='form' className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center py-4" style={{ backgroundImage: "url('banner/Hero_Backgournd.png')"}}>
       <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md w-full">
         <h1 className="text-2xl font-bold mb-4 text-center">Want to Join with Government Approved Certification</h1>
         <p className="mb-6 text-center">Fill out the form below and our team will connect with you soon.</p>

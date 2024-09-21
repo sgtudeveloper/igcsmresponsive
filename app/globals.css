@@ -4,16 +4,26 @@
 
 @keyframes bounce-slow {
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-10px);
-    }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .animate-bounce-slow {
-    animation: bounce-slow 3s infinite;
+  animation: bounce-slow 3s infinite;
+}
+
+#notification {
+  width: 22%;
+  margin: auto;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  left: 87%;
+  transform: translateX(-50%);
 }
