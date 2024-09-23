@@ -5,8 +5,10 @@ import logo from "@/public/image/logo.webp";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-transparent backdrop-blur-sm
-      border top-0 sticky z-50 shadow-md">
+    <div
+      className="navbar bg-transparent backdrop-blur-sm
+      border top-0 sticky z-50 shadow-md"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,16 +64,16 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl box-border hidden lg:inline">
+        <a className="btn btn-ghost hover:bg-transparent text-xl box-border hidden lg:inline">
           <Image src={logo} width={200} alt="IGCSM" />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex text-5xl">
-        <ul className="menu menu-horizontal px-1 space-x-4">
+        <ul className="menu menu-horizontal px-1 space-x-4 text-orange-500">
           <li>
             <a
               href="#home"
-              className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate"
+              className="font-bold hover:underline hover:bg-transparent transition duration-300 md:text-xl"
             >
               Home
             </a>
@@ -79,7 +81,7 @@ const Navbar = () => {
           <li>
             <a
               href="#achievements"
-              className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate"
+              className="font-bold hover:underline hover:bg-transparent transition duration-300 md:text-xl"
             >
               Achievements
             </a>
@@ -87,7 +89,7 @@ const Navbar = () => {
           <li>
             <a
               href="#form"
-              className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate"
+              className="font-bold hover:underline hover:bg-transparent transition duration-300 md:text-xl"
             >
               Contact
             </a>
@@ -98,13 +100,13 @@ const Navbar = () => {
         <div className="flex space-x-4  pr-4">
           <a
             href="mailto:info@igtiindia.org"
-            className="hover:text-yellow-300 transition duration-300 underline hidden sm:inline-flex items-center"
+            className="hover:text-orange-500 transition duration-300 underline hidden sm:inline-flex items-center"
           >
             <FaEnvelope className="mr-2" /> info@igtiindia.org
           </a>
           <a
             href="tel:+919818841248"
-            className="hover:text-yellow-300 transition duration-300 inline-flex items-center underline"
+            className="hover:text-orange-500 transition duration-300 inline-flex items-center underline"
           >
             <FaPhone className="mr-2 text-sm" /> 981 884 1248
           </a>{" "}

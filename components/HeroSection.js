@@ -16,14 +16,14 @@ const HeroSection = () => {
         }}
       ></div>
       <div className="flex flex-col items-start md:w-3/4 relative z-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-orange-500 mb-1 sm:mb-6">
           Join India&apos;s No-1 Franchise Network
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 mb-6">
+        <p className="text-lg md:text-xl text-green-600 mb-6">
           Get a chance to join with us and boost your business.
         </p>
         <button
-          className="mx-auto sm:mx-1 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
+          className="mx-auto sm:mx-1 px-6 py-3 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition duration-300"
           onClick={() => document.getElementById("my_modal_4").showModal()}
         >
           Contact Us!

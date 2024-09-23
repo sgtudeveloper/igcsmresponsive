@@ -2,7 +2,6 @@ import About from '@/components/About'
 import Achievment from '@/components/Achievment'
 import CardComponent from '@/components/CardComponent'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
 import Notification from '@/components/Notification'
 import PopupForm from '@/components/PopupForm'
@@ -18,7 +17,7 @@ const page = () => {
       <CardComponent/>
       <Achievment/>
       <Contact/>
-      <Footer/>
+      
     </>
   )
 }
