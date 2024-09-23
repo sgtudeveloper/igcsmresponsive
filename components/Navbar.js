@@ -5,11 +5,12 @@ import logo from "@/public/image/logo.webp";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 border top-0 sticky z-50 shadow-lg">
+    <div className="navbar bg-transparent backdrop-blur-sm
+      border top-0 sticky z-50 shadow-md">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
               fill="none"
@@ -22,7 +23,8 @@ const Navbar = () => {
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
               />
-            </svg>
+            </svg> */}
+            <Image src={logo} width={200} alt="IGCSM" />
           </div>
           <ul
             tabIndex={0}
@@ -32,21 +34,31 @@ const Navbar = () => {
               <Image src={logo} width={200} alt="IGCSM" />
             </li>
             <li>
-              <a className="hover:text-yellow-300 transition duration-300">Item 1</a>
+              <a className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate">
+                Item 1
+              </a>
             </li>
             <li>
-              <a className="hover:text-yellow-300 transition duration-300">Parent</a>
+              <a className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate">
+                Parent
+              </a>
               <ul className="p-2">
                 <li>
-                  <a className="hover:text-yellow-300 transition duration-300">Submenu 1</a>
+                  <a className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate">
+                    Submenu 1
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:text-yellow-300 transition duration-300">Submenu 2</a>
+                  <a className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate">
+                    Submenu 2
+                  </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a className="hover:text-yellow-300 transition duration-300">Item 3</a>
+              <a className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate">
+                Item 3
+              </a>
             </li>
           </ul>
         </div>
@@ -54,16 +66,31 @@ const Navbar = () => {
           <Image src={logo} width={200} alt="IGCSM" />
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex text-5xl">
         <ul className="menu menu-horizontal px-1 space-x-4">
           <li>
-            <a href="#home" className="hover:text-yellow-300 transition duration-300">Home</a>
+            <a
+              href="#home"
+              className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate"
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#achievements" className="hover:text-yellow-300 transition duration-300">Achievements</a>
+            <a
+              href="#achievements"
+              className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate"
+            >
+              Achievements
+            </a>
           </li>
           <li>
-            <a href="#form" className="hover:text-yellow-300 transition duration-300">Contact</a>
+            <a
+              href="#form"
+              className="hover:text-yellow-300 transition duration-300 md:text-xl font-bold underline text-slate"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>

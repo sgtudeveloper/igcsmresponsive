@@ -21,6 +21,9 @@ const PopupForm = () => {
 
 const notification = () => {
   document.getElementById('notification').classList.toggle('hidden');
+  setTimeout(() => {
+    document.getElementById('notification').classList.toggle('hidden');
+  }, 1500);
 }
   
   const handleSubmit = async (e) => {
@@ -42,15 +45,30 @@ const notification = () => {
       });
       document.getElementById('my_modal_4').close();
       notification();
-      setTimeout(()=>{
-        notification();
-      },1000)
     }
     console.log(formData);
   };
 
   return (
     <>
+      <div id="notification" className="hidden">
+        <div role="alert" className="alert alert-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 shrink-0 stroke-white"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <span className="text-white">Form Submitted Successfully!!</span>
+        </div>
+      </div>
       <dialog id="my_modal_4" className="modal px-4">
         <div
           className="modal-box w-full max-w-lg p-6 shadow-md"
@@ -66,11 +84,7 @@ const notification = () => {
           </h3>
           <form className="space-y-4 text-black" onSubmit={handleSubmit}>
             <div>
-              <label
-                className="block text-md font-bold"
-              >
-                Name
-              </label>
+              <label className="block text-md font-bold">Name</label>
               <input
                 type="text"
                 name="yourName"
@@ -81,11 +95,7 @@ const notification = () => {
             </div>
             <div className="flex space-x-4">
               <div className="flex-1">
-                <label
-                  className="block text-md font-bold"
-                >
-                  Contact No
-                </label>
+                <label className="block text-md font-bold">Contact No</label>
                 <input
                   type="text"
                   name="phoneNumber"
@@ -95,11 +105,7 @@ const notification = () => {
                 />
               </div>
               <div className="flex-1">
-                <label
-                  className="block text-md font-bold"
-                >
-                  Email
-                </label>
+                <label className="block text-md font-bold">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -110,9 +116,7 @@ const notification = () => {
               </div>
             </div>
             <div>
-              <label
-                className="block text-md font-bold"
-              >
+              <label className="block text-md font-bold">
                 Institution Name
               </label>
               <input
@@ -124,11 +128,7 @@ const notification = () => {
               />
             </div>
             <div>
-              <label
-                className="block text-md font-bold"
-              >
-                District
-              </label>
+              <label className="block text-md font-bold">District</label>
               <textarea
                 name="districtName"
                 value={formData.districtName}
@@ -137,7 +137,11 @@ const notification = () => {
               ></textarea>
             </div>
             <div className="modal-action">
-              <input type="submit" className="btn bg-green-600 text-white" value="Submit" />
+              <input
+                type="submit"
+                className="btn bg-green-600 text-white"
+                value="Submit"
+              />
             </div>
           </form>
         </div>
