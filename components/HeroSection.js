@@ -17,7 +17,7 @@ const HeroSection = () => {
       ></div>
       <div className="flex flex-col items-start md:w-3/4 relative z-10">
         <h1 className="text-3xl md:text-5xl font-bold text-orange-500 mb-1 sm:mb-6">
-          Join India&apos;s No-1 Franchise Network
+          Join India&apos;s No-1 Franchise Network IGCSM
         </h1>
         <p className="text-lg md:text-xl text-green-600 mb-6">
           Get a chance to join with us and boost your business.
@@ -31,10 +31,10 @@ const HeroSection = () => {
       </div>
       <div className="md:w-1/3 mt-6 md:mt-0 relative z-10">
         <Image
-          src="/image/hero_banner.jpg"
-          width={300}
-          height={300}
-          alt="Hero Banner"
+          src="/banner/hero_bannerimg.png"
+          width={400}
+          height={400}
+          alt="Grow with IGCSM by joining our network!"
           className="animate-bounce-slow"
         />
       </div>
