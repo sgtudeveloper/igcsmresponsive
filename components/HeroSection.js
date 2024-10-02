@@ -31,7 +31,7 @@ const HeroSection = () => {
       </div>
       <div className="md:w-1/3 mt-6 md:mt-0 relative z-10">
         <Image
-          src="/banner/hero_bannerimg.png"
+          src="/banner/Hero_BannerImg.png"
           width={400}
           height={400}
           alt="Grow with IGCSM by joining our network!"
