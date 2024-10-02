@@ -14,13 +14,12 @@ const About = () => {
           organization dedicated to empowering underprivileged communities
           across India through education, skill development, and microfinance
           initiatives. Established in 2008 and headquartered in Delhi, IGCSM
-          operates in over <b>21</b> states, impacting more than{" "}
-          <b> 500,000 </b>
-          people, including children, youth, and women. With a network of{" "}
-          <b>500+</b>
-          Training Partners (TPs) and ISO 9001:2015 certification, IGCSM is
-          committed to delivering high-quality, market-relevant education and
-          skills training. In partnership with the government,{" "}
+          operates in over <b>21 states</b>, impacting more than{" "}
+          <b> 500,000 people</b>, including children, youth, and women. With a
+          network of <b>500+ Training Partners (TPs)</b> and ISO 9001:2015
+          certification, IGCSM is committed to delivering high-quality,
+          market-relevant education and skills training. In partnership with the
+          government,{" "}
           <u>
             <i>
               {" "}
